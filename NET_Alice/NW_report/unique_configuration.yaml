@@ -1,0 +1,8 @@
+Authentication_list:
+  crawler:
+    username: user_crawler
+    password: pass_crawler
+  admin:
+    username: user_admin
+    password: pass_admin
+directory_log_stored: ./log_bank/

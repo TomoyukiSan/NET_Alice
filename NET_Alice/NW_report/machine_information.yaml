@@ -1,0 +1,27 @@
+host_no1:
+  Authentication: crawler
+  command:
+  - show running config
+  - show clock
+  - show interface status
+  ip_address: 192.255.255.255
+  change_mode: false
+  os: cisco
+host_no2:
+  Authentication: admin
+  command:
+  - show running config
+  - show clock
+  - show interface status
+  ip_address: 255.255.255.255
+  change_mode: false
+  os: NX_OS
+host_no3:
+  Authentication: crawler
+  command:
+  - show running config
+  - show clock
+  - show interface status
+  ip_address: 10.255.255.255
+  change_mode: false
+  os: ASA
