@@ -1,0 +1,13 @@
+auth_info:
+  crawler:
+    username: 'user'
+    password: 'pass'
+  admin:
+    username: 'user'
+    password: 'pass'
+dir_controller:
+  static_pass: './'
+  task_pass: './'
+
+
+

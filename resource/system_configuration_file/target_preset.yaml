@@ -1,0 +1,29 @@
+host_no1:
+  ip: '192.255.255.255'
+  os: 'cisco'
+  auth: 'crawler'
+  mode: false
+  command:
+    - "show running config"
+    - "show clock"
+    - "show interface status"
+
+host_no2:
+  ip: '255.255.255.255'
+  os: 'NX_OS'
+  auth: 'crawler'
+  mode: false
+  command:
+    - "show running config"
+    - "show clock"
+    - "show interface status"
+
+host_no3:
+  ip: '10.255.255.255'
+  os: 'ASA'
+  auth: 'crawler'
+  mode: false
+  command:
+    - "show running config"
+    - "show clock"
+    - "show interface status"
