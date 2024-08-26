@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>NET Alice</title>
 </head>
 <body>
-$END$
+
+<p class="h1">NET Alice</p>
+<div class="container">
+
+<form method="post">
+  <label for="comment" class="form-label">{{ comment }}</label>
+
+  <div class="mb-3">
+    <label for="config_name" class="form-label">Config Name</label>
+    <input type="config_name" class="form-control" id="config_name" name="config_name" aria-describedby="config_name_help">
+    <div id="config_name_help" class="form-text">保存するコンフィグの名前を設定して下さい</div>
+  </div>
+  <div class="mb-3">
+    <label for="ip_address" class="form-label">IP Address</label>
+    <input type="ip_address" class="form-control" id="ip_address" name="ip_address" aria-describedby="ip_address_help">
+    <div id="ip_address_help" class="form-text">IPアドレスを入力して下さい</div>
+  </div>
+  <div class="mb-3">
+    <label for="os" class="form-label">OS</label>
+    <input type="os" class="form-control" id="os" name="os" aria-describedby="os_help">
+    <div id="os_help" class="form-text">OSを選択して下さい</div>
+  </div>
+  <div class="mb-3">
+    <label for="change_mode" class="form-label">Change Mode</label>
+        <select id="change_mode" name="change_mode" class="form-select" aria-label="Default select example">
+            <option value="false" selected>False</option>
+            <option value="true">True</option>
+        </select>
+    <div id="change_mode_help" class="form-text">モード変更の有無を選択して下さい</div>
+  </div>
+  <div class="mb-3">
+    <label for="authentication" class="form-label">Authentication</label>
+        <select id="authentication" name="authentication" class="form-select" aria-label="Default select example">
+            <option value="crawler" selected>crawler</option>
+            <option value="acicrawler">acicrawler</option>
+            <option value="admin">admin</option>
+        </select>
+    <div id="authentication_help" class="form-text">認証情報を選択して下さい</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="command" class="form-label">Command</label>
+    <textarea class="form-control" id="command" name="command" rows="8"></textarea>
+    <div id="command_help" class="form-text">
+        コマンドを入力して下さい
+        一括で入力する際はコマンドを改行で分けて下さい
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">登録</button>
+</form>
+</div>
+
+
 </body>
 </html>
